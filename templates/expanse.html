@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+{% load crispy_forms_tags %}
+{%block content%}
+<div class="row">
+  <h2 style="padding-left: 600px;">Expanse</h2>
+</div>
+<!-- forms start -->
+<div class="container">
+  <div class="row">
+    <form style="padding-left: 38%;" action="#" method="POST">
+      {{Eforms|crispy}}
+      {%csrf_token%}
+      <!-- {%for forms in Eforms%}
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">{{forms.name}}</label>
+        <div class="form-control">{{forms}}</div>
+
+      </div>
+      {%endfor%} -->
+      <button type="submit" value="submit" class="btn btn-primary mt-5 ">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- forms end -->
+{%endblock%}
