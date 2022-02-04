@@ -1,1 +1,1 @@
-web: gunicorn TFHRM.wsgi
+web: gunicorn expanse.wsgi
