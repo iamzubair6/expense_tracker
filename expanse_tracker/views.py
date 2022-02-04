@@ -32,7 +32,7 @@ def history(request):
     if request.method == "POST":
         fromdate = request.POST.get('fromdate')
         todate = request.POST.get('todate')
-        print(fromdate, todate)
+        # print(fromdate, todate)
         searchresult = Expanse.objects.filter(Date__range=[fromdate, todate])
         return render(request, "expanse_history.html", context={'Fhistory': searchresult})
     else:
