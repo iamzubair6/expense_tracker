@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'expanse.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd83okcjpf2qvch',
-        'USER': 'wwnwlmkiwnzmfj',
+        'NAME': 'postgres',
+        'USER': 'postgres',
         'PASSWORD': '2da13d97c26f0e156c0cca044c0e3a00fad8ec1b1cadf41b2dd82b03c174034f',
-        'HOST': 'ec2-34-206-245-175.compute-1.amazonaws.com',
+        'HOST': 'db.ygemumtcearmeclffmux.supabase.co',
         'PORT': '5432',
     }
 }
